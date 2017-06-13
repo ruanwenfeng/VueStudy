@@ -1,0 +1,40 @@
+<!-- 
+Author: wkky (791113844@qq.com)
+Data: 2017-06-13 21:00:52
+-->
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="UTF-8">
+    <title>Vue属性计算</title>
+    <script type="text/javascript" src="../vue.js"></script>
+	<script type="text/javascript" src="./lodash.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+</head>
+<body >
+
+	<div id="app1">
+	  <p>Original message: "{{ message }}"</p>
+	  <p>Computed reversed message: "{{ reversedMessage }}"</p>
+	</div>
+	<br/>
+	<div id="app2">
+		<p>firstName : {{ firstName }}</p>
+		<p>lastName : {{ lastName }}</p>
+		<p>fullName : {{ fullName }}</p>
+	</div>
+	<div id="app3">
+		<p>firstName : {{ firstName }}</p>
+		<p>lastName : {{ lastName }}</p>
+		<p>fullName : {{ fullName }}</p>
+	</div>
+	<br/>
+	<div id="app4">
+	  <p>
+	    Ask a yes/no question:
+	    <input v-model="question">
+	  </p>
+	  <p>{{ answer }}</p>
+	</div>
+</body>
+</html>
