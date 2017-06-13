@@ -1,0 +1,25 @@
+<!-- 
+Author: wkky (791113844@qq.com)
+Data: 2017-06-13 20:16:52
+-->
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="UTF-8">
+    <title>Vue模板语法</title>
+    <script type="text/javascript" src="../vue.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+<body >
+	<span id="app1">Message: {{ msg }}</span>
+	<br/>
+	<span id="app2" v-once>This will never change: {{ msg }}</span>
+	<br/>
+	<div id="app3" v-html="rawHtml"></div>
+	<br/>
+	<div class="cls1" v-bind:id="id">绑定id app4</div>
+	<a id='app5' v-on:click="doSomething">{{msg}}</a>
+	<br/>
+	<span id="app6">Message: {{ msg | filter }}</span>
+</body>
+</html>
